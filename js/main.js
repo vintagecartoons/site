@@ -74,7 +74,7 @@ function playVideo(index) {
 	var currentVideo = playlist[index];
 
 	$('.videoframe').remove();
-	$('#iframecontainer').prepend($('<video class="videoframe" style="width:100%;height:100%;">'));
+	$('#iframecontainer').prepend($('<video class="videoframe">'));
 
 	for (var i in currentVideo.formats) {
 		$('.videoframe').append($('<source src="http://archive.org/download/'+currentVideo.urlpart+'.'+currentVideo.formats[i]+'"\/>'));
@@ -183,7 +183,7 @@ $(function() {
 $(document).ready(function () {
   function reorient(e) {
     var portrait = (window.orientation % 180 == 0);
-    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+    $("body > div").css("-webkit-transform", portrait ? "rotate(-90deg)" : "");
   }
   window.onorientationchange = reorient;
   window.setTimeout(reorient, 0);

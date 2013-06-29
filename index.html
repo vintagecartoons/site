@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Vintage Cartoons</title>
         <meta name="description" content="">
-        <!-- <meta name="viewport" content="width=1024,  initial-scale=1.0; maximum-scale=1.0;"> -->
 
         <link href="favicon.ico?v=1" rel="icon" type="image/x-icon" />
         <link href="favicon.ico?v=1" rel="shortcut icon" type="image/x-icon" />
@@ -23,7 +22,6 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <!-- <link rel="stylesheet" href="css/retina.css"> -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -31,27 +29,29 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-		<div id="buttoncontainer">
-			<div id="content">
-				<div id="iframecontainer">
-					<video class="videoframe" style="width:100%;height:100%;">
-						Vintage Cartoon's<!--'--> player requires either JavaScript to be enabled or a modern
-						browser that understands the HTML5 &lt;video&gt; tag.
-					</video>
+        <div id="content">
 
-					<div id="noisecontainer">&nbsp;</div>
-				</div>
+	        <img id="backgroundImage" class="layer" src="img/tv_back.jpg" alt="background"/>
+			<div id="iframecontainer" class="layer">
+				<video class="videoframe">
+					Vintage Cartoon's<!--'--> player requires either JavaScript to be enabled or a modern
+					browser that understands the HTML5 &lt;video&gt; tag.
+				</video>
+        		
+        		<img id="noisecontainer" src="img/noise.jpg" alt="background"/>
 			</div>
+	        <img id="frameoverlay" class="layer" src="img/tv_layer.png" alt="background"/>
 
-			<div id="frameoverlay">&nbsp;</div>
-			
-			<a id="tv_button_facebook" class="tv-button" href="http://www.facebook.com/share.php?u=http://vintagecartoons.tv/" target="_blank" title="Share This on Facebook"></a>
+			<div id="buttoncontainer" class="layer">
+				
+				<a id="tv_button_facebook" class="tv-button" href="http://www.facebook.com/share.php?u=http://vintagecartoons.tv/" target="_blank" title="Share This on Facebook"></a>
 
-			<a id="tv_button_twitter" class="tv-button" href="http://twitter.com/home?status=Amazing vintage cartoons: http://vintagecartoons.tv/" target="_blank" title="Share This on Twitter"></a>
+				<a id="tv_button_twitter" class="tv-button" href="http://twitter.com/home?status=Amazing vintage cartoons: http://vintagecartoons.tv/" target="_blank" title="Share This on Twitter"></a>
 
-			<a id="tv_button_plus" class="tv-button" href="https://plus.google.com/share?url=http://vintagecartoons.tv/" target="_blank" title="Share This on G+"></a>
-			
-			<a id="tv_button_next" class="tv-button" href="#" title="?"></a>
+				<a id="tv_button_plus" class="tv-button" href="https://plus.google.com/share?url=http://vintagecartoons.tv/" target="_blank" title="Share This on G+"></a>
+				
+				<a id="tv_button_next" class="tv-button" href="#" title="?"></a>
+			</div>
 		</div>
 
 		<footer class="footer">
@@ -61,7 +61,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js?v=17"></script>
+        <script src="js/main.js?v=19"></script>
 
         <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
